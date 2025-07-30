@@ -8,9 +8,8 @@ import {
 
 export default function Footer() {
   return (
-    <footer className=" py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-12">
-        {/* Logo + Social */}
+    <footer className=" max-w-7xl mx-auto py-16">
+      <div className="px-6 grid grid-cols-1 md:grid-cols-5 gap-12">
         <div className="md:col-span-2 flex flex-col space-y-6">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-black text-white flex items-center justify-center font-bold">
@@ -50,8 +49,6 @@ export default function Footer() {
             </p>
           </form>
         </div>
-
-        {/* Product Links */}
         <div>
           <h4 className="font-semibold mb-4">Product</h4>
           <ul className="space-y-2 text-gray-700 ">
@@ -63,7 +60,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Company Links */}
         <div>
           <h4 className="font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-gray-600">
@@ -76,7 +72,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Resources Links */}
         <div>
           <h4 className="font-semibold mb-4">Resources</h4>
           <ul className="space-y-2 text-gray-600">
@@ -85,7 +80,7 @@ export default function Footer() {
             <li>Advertise</li>
           </ul>
         </div>
-      </div>
+        </div>
     </footer>
   );
 }

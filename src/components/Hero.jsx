@@ -24,12 +24,12 @@ const Hero = () => {
         className="absolute inset-0 bg-black/70 z-10"
       />
 
-      <div className="relative z-20 max-w-7xl w-full px-6 py-16 text-white text-center lg:text-left items-center gap-12 ">
+      <div className="relative z-20 max-w-7xl w-full px-6 py-16 text-white lg:text-left items-center gap-12 ">
         <motion.span
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-emerald-600 font-MeowScript text-4xl"
+          className="text-emerald-600 font-MeowScript text-lg md:text-4xl"
         >
           Experience Unmatched Delight With Us.
         </motion.span>

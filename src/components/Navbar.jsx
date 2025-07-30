@@ -8,7 +8,7 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="absolute top-7 left-0 w-full z-50 bg-transparent text-white px-18 py-4 ">
+    <nav className="absolute top-7 left-0 w-full z-50 bg-transparent text-white px-6 md:px-18 py-4 ">
       <div className="max-w-8xl mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold "><img src="\logo.webp" alt="" /></div>
         <div className="hidden md:flex gap-6 items-center">
