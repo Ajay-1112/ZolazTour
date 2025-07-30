@@ -29,7 +29,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-white font-MeowScript text-lg md:text-4xl"
+          className="text-emerald-600 font-MeowScript text-lg md:text-2xl"
         >
           Experience Unmatched Delight With Us.
         </motion.span>

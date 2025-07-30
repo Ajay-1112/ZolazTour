@@ -13,14 +13,14 @@ const destinations = [
     tours: 40,
     image:
       'https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80',
-    offset: 'translate-y-10',
+    offset: 'translate-y-0',
   },
   {
     title: 'New York',
     tours: 25,
     image:
       'https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80',
-    offset: 'translate-y-20',
+    offset: 'translate-y-0',
   },
 ];
 
