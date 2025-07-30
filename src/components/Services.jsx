@@ -60,9 +60,8 @@ const Services = () => {
   return (
     <section className="py-10 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-5xl font-bold text-black ">
+        <div className="text-center mb-14 ">
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent ">
             Indulge in the{" "}
             <span className="text-emerald-600 font-MeowScript">Extraordinary</span>
           </h2>
@@ -73,32 +72,29 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-3"
             >
-              {/* Icon and Header */}
               <div className="flex items-start gap-4 mb-5">
                 <div className="w-16 h-12 rounded-full  flex items-center justify-center">
                   {service.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-bold text-black">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm text-gray-800 mt-1">
                     {service.description}
                   </p>
                 </div>
               </div>
 
-              {/* Features */}
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-sm text-gray-700">
+                  <li key={i} className="flex items-center text-sm text-gray-800">
                     <CheckCircle className="w-4 h-4 text-emerald-500 mr-2" />
                     {feature}
                   </li>

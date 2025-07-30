@@ -62,13 +62,13 @@ const testimonials = [
 ];
 
 const Testimonial = () => (
-    <div className="min-h-screen flex justify-center items-center md:py-12">
+    <div className=" flex justify-center items-center md:py-12">
         <div className="h-full w-full">
-            <div className="text-center mb-12 px-4">
-                <h2 className="text-4xl md:text-6xl font-MeowScript text-emerald-600 font-bold tracking-tight mb-4">
+            <div className="text-center mb-12 px-4 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
+                <h2 className="text-4xl md:text-5xl font-MeowScript text-emerald-600 font-bold tracking-tight mb-4">
                     Testimonials
                 </h2>
-                <p className="text-lg md:text-2xl text-gray-700 tracking-tight">
+                <p className="text-lg  text-gray-700 tracking-tight">
                     What Our Clients Say
                 </p>
             </div>
@@ -101,8 +101,8 @@ const TestimonialList = () =>
                         </AvatarFallback>
                     </Avatar>
                     <div>
-                        <p className="text-lg font-semibold">{testimonial.name}</p>
-                        <p className="text-sm text-gray-400">{testimonial.designation}</p>
+                        <p className="text-md text-gray-700 font-semibold">{testimonial.name}</p>
+                        <p className="text-xs text-gray-400">{testimonial.designation}</p>
                     </div>
                 </div>
                 <Button variant="ghost" size="icon" asChild>
@@ -111,7 +111,7 @@ const TestimonialList = () =>
                     </Link>
                 </Button>
             </div>
-            <p className="mt-5 text-[17px] text-gray-700">{testimonial.testimonial}</p>
+            <p className="mt-3 text-[14px] text-gray-700">{testimonial.testimonial}</p>
         </div>
     ));
 

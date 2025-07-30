@@ -11,18 +11,18 @@ export default function CTA() {
                 }}
             />
 
-            <div className="absolute inset-0 z-10 bg-black/60 bg-opacity-60" />
+            <div className="absolute inset-0 z-10 bg-black/40 bg-opacity-60" />
 
             <div className="relative z-20 max-w-5xl mx-auto text-center text-white">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <h2 className="text-4xl md:text-5xl  font-bold leading-tight">
                     Escape the Ordinary —
                     <br />
-                    <span className="font-MeowScript text-emerald-500">
+                    <span className="font-MeowScript text-emerald-600">
                         Discover the Caribbean with Zolaz
                     </span>
                 </h2>
 
-                <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                <p className="mt-6 text-lg text-gray-200 max-w-2xl mx-auto">
                     From secluded villas to tailored experiences, we create unforgettable
                     escapes for those who crave the extraordinary.
                 </p>

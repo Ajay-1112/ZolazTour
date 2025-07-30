@@ -13,14 +13,14 @@ const destinations = [
     tours: 40,
     image:
       'https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80',
-    offset: 'translate-y-15', 
+    offset: 'translate-y-10',
   },
   {
     title: 'New York',
     tours: 25,
     image:
       'https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80',
-    offset: 'translate-y-30', 
+    offset: 'translate-y-20',
   },
 ];
 
@@ -28,19 +28,14 @@ const Destinations = () => {
   return (
     <section className="py-16 relative">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <div>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
+          <div className='text-left'>
             <p className="text-emerald-600 font-medium mb-2 font-MeowScript text-3xl">Popular Destination</p>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
               Featured Destination
             </h2>
           </div>
-          <p className="text-gray-500 max-w-md mt-4 md:mt-0 italic">
-            At Express Travel, we believe in the transformative power of travel.
-            As avid explorers ourselves, we understand the desire to uncover.
-          </p>
-        </div>
+         </div>
 
         {/* Cards */}
         <div className="flex flex-col md:flex-row gap-6">
@@ -49,6 +44,8 @@ const Destinations = () => {
               key={idx}
               className={`relative w-full md:w-1/3 h-[400px] rounded-xl overflow-hidden shadow-md group hover:shadow-xl transition-all duration-300 transform ${item.offset}`}
             >
+              <div className="absolute inset-0 z-10 bg-black/10 bg-opacity-60" />
+
               <img
                 src={item.image}
                 alt={item.title}
