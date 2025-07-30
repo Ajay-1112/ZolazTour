@@ -36,10 +36,10 @@ const villas = [
     rating: 5.0,
     reviews: 89,
     images: [
-     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1751795195789-8dab6693475d?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://plus.unsplash.com/premium_photo-1748087734665-fc0f73d83858?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-   amenities: ["wifi", "parking", "kitchen", "pool"],
+    amenities: ["wifi", "parking", "kitchen", "pool"],
     badge: "Luxury",
     description: "Magnificent hacienda-style retreat with traditional charm and modern luxury"
   },
@@ -59,7 +59,7 @@ const villas = [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1751795195789-8dab6693475d?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://plus.unsplash.com/premium_photo-1748087734665-fc0f73d83858?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-   amenities: ["wifi", "parking", "kitchen", "pool"],
+    amenities: ["wifi", "parking", "kitchen", "pool"],
     badge: "Staff Included",
     description: "Elegant villa complex with dedicated staff and world-class amenities"
   },
@@ -86,13 +86,15 @@ export default function VillaListings() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-20 min-h-screen">
-      <div className="text-center mb-16">
-
-        <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-6">
+    <section className="max-w-7xl mx-auto px-4 py-26 min-h-screen">
+      <div className="text-center mb-12">
+        <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <MapPin className="w-4 h-4" />
+          Featured Villas
+        </div>
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
           The Caribbean's most
-          <br />
-          <span className="text-emerald-600 font-MeowScript">exceptional homes</span>
+          exceptional homes
         </h2>
         <p className="text-gray-600 text-lg mt-6 max-w-3xl mx-auto leading-relaxed">
           Discover the epitome of Caribbean elegance and comfort, embodied in our carefully curated luxury villa collection, complemented by our top-notch service and unforgettable experiences.

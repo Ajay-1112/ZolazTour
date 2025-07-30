@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Marquee from "@/components/ui/marquee";
 import Link from "next/link";
 import React from "react";
-
+import { MapPin } from "lucide-react";
 const testimonials = [
     {
         id: 1,
@@ -62,14 +62,17 @@ const testimonials = [
 ];
 
 const Testimonial = () => (
-    <div className=" flex justify-center items-center md:py-12">
+    <div className=" flex justify-center items-center md:py-20">
         <div className="h-full w-full">
             <div className="text-center mb-12 px-4 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
-                <h2 className="text-4xl md:text-5xl font-MeowScript text-emerald-600 font-bold tracking-tight mb-4">
-                    Testimonials
+                <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <MapPin className="w-4 h-4" />
+          Testimonials
+        </div>
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
+                    What Our Clients Say
                 </h2>
                 <p className="text-lg  text-gray-700 tracking-tight">
-                    What Our Clients Say
                 </p>
             </div>
             <div className="relative">

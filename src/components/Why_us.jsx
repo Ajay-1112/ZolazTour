@@ -1,4 +1,5 @@
 import React from "react";
+import { Sparkles } from "lucide-react";
 const experiences = [
   {
     icon: "/icons/one.svg",
@@ -42,8 +43,12 @@ const Why_us = () => {
   return (
     <section className="py-20 mt-10">
       <div className="max-w-screen-xl mx-auto px-6 text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-          Why Choose <span className="text-emerald-600 font-MeowScript"> Zolaz?</span>
+        <div className="inline-flex items-center gap-2 bg-emerald-100/80 backdrop-blur-sm text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <Sparkles className="w-4 h-4" />
+          Premium Caribbean Experiences
+        </div>
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4">
+          Why Choose Zolaz?
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-16">
           Zolaz delivers elevated Caribbean experiences through expert planning,

@@ -29,7 +29,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-emerald-600 font-MeowScript text-lg md:text-2xl"
+          className="text-emerald-600  text-lg md:text-xl"
         >
           Experience Unmatched Delight With Us.
         </motion.span>
@@ -41,7 +41,7 @@ const Hero = () => {
           className="mt-2 text-4xl md:text-5xl lg:text-7xl font-bold"
         >
           Where Exceptional <br className="hidden md:inline" />
-          Memories <span className="text-emerald-600">Begin</span>
+          Memories Begin
         </motion.h1>
 
         <motion.p
