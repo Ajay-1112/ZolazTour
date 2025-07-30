@@ -10,7 +10,7 @@ import Why_us from "@/components/Why_us";
 
 export default function Home() {
   return (
-    <div className="font-Geist ">
+    <div className="font-Geist bg-gray-50/40">
       <Hero />
       <Destinations/>
       <Why_us/>

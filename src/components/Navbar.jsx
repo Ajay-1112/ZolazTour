@@ -17,7 +17,7 @@ export default function Navbar() {
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="flex items-center gap-1 hover:text-emerald-400"
             >
-              Destinations
+              <p>Destinations</p>
               <ChevronDown size={18} />
             </button>
             {dropdownOpen && (
