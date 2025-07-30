@@ -1,11 +1,9 @@
 import React from "react";
-import { Button } from "./ui/button";
-
 export default function CTA() {
     return (
-        <section className="relative overflow-hidden py-16  px-6 md:px-12 max-w-7xl mx-auto rounded-2xl shadow-2xl">
+        <section className="relative overflow-hidden py-16 md:px-12 max-w-7xl mx-auto rounded-2xl shadow-2xl">
             <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute inset-0 z-0 bg-cover bg-center "
                 style={{
                     backgroundImage: "url('/Cta.jpg')",
                 }}
