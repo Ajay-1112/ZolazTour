@@ -1,43 +1,47 @@
-import React from "react";
-import { Sparkles } from "lucide-react";
+
+import {
+  Layers,
+  Map,
+  KeyRound,
+  Gem,
+  WandSparkles,
+  Globe,
+  Sparkles,
+} from "lucide-react";
+
 const experiences = [
   {
-    icon: "/icons/one.svg",
+    icon: Layers,
     title: "Curated Collection",
-    description:
-      "Escape to luxury with our handpicked villas, each selected for comfort and character.",
+    description: "Escape to luxury with our handpicked villas, each selected for comfort and character.",
   },
   {
-    icon: "/icons/two.svg",
+    icon: Map,
     title: "Remarkable Locations",
-    description:
-      "Discover hidden gems across the Caribbean in our exclusive destinations.",
+    description: "Discover hidden gems across the Caribbean in our exclusive destinations.",
   },
   {
-    icon: "/icons/three.svg",
+    icon: KeyRound,
     title: "Confidentiality",
-    description:
-      "Your privacy is our priority — enjoy discreet, personalized service.",
+    description: "Your privacy is our priority — enjoy discreet, personalized service.",
   },
   {
-    icon: "/icons/four.svg",
+    icon: Gem,
     title: "Luxury Amenities",
-    description:
-      "Indulge in world-class comforts, from infinity pools to private chefs.",
+    description: "Indulge in world-class comforts, from infinity pools to private chefs.",
   },
   {
-    icon: "/icons/five.svg",
+    icon: WandSparkles,
     title: "Trip Designers",
-    description:
-      "Let our travel experts craft a journey tailored entirely to your dreams.",
+    description: "Let our travel experts craft a journey tailored entirely to your dreams.",
   },
   {
-    icon: "/icons/six.svg",
+    icon: Globe,
     title: "Local Expertise",
-    description:
-      "Explore like a local with guidance from seasoned Caribbean specialists.",
+    description: "Explore like a local with guidance from seasoned Caribbean specialists.",
   },
 ];
+
 
 const Why_us = () => {
   return (
@@ -61,12 +65,8 @@ const Why_us = () => {
               key={index}
               className="flex flex-col items-center text-center bg-white border border-gray-100 rounded-2xl p-8 shadow-md hover:shadow-xl transition h-full hover:translate-0.5"
             >
-              <div className="p-4 mb-4 flex items-center justify-center">
-                <img
-                  src={exp.icon}
-                  alt={exp.title}
-                  className="w-12 h-12 object-contain text-emerald-500"
-                />
+              <div className="p-2 mb-2 flex items-center justify-center">
+                <exp.icon className="w-12 h-12 text-emerald-500" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {exp.title}
