@@ -8,87 +8,106 @@ import {
 
 export default function Footer() {
   return (
-    <footer className=" max-w-7xl mx-auto py-16">
-      <div className="px-6 grid grid-cols-1 md:grid-cols-5 gap-12">
-        <div className="md:col-span-2 flex flex-col space-y-6">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-black text-white flex items-center justify-center font-bold">
-              Z
+    <footer className="bg-gray-50 border-t mt-10 border-gray-200">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+          {/* Brand Section */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-black text-white flex items-center justify-center font-bold rounded">
+                Z
+              </div>
+              <span className="text-xl font-semibold text-gray-900">Zolaz</span>
             </div>
-            <span className="text-xl font-semibold">Zolaz</span>
+            <p className="text-gray-600 text-sm max-w-sm">
+              Building the future of digital experiences with innovative solutions.
+            </p>
+            <div className="flex space-x-3">
+              <SocialIcon icon={<FaTwitter />} />
+              <SocialIcon icon={<FaLinkedinIn />} />
+              <SocialIcon icon={<FaDiscord />} />
+              <SocialIcon icon={<FaTelegramPlane />} />
+              <SocialIcon icon={<FaRedditAlien />} />
+            </div>
           </div>
 
-          <div className="flex space-x-4">
-            <IconCircle icon={<FaDiscord />} />
-            <IconCircle icon={<FaRedditAlien />} />
-            <IconCircle icon={<FaTwitter />} />
-            <IconCircle icon={<FaTelegramPlane />} />
-            <IconCircle icon={<FaLinkedinIn />} />
+          {/* Links Grid */}
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <h4 className="font-medium text-gray-900 mb-3">Product</h4>
+              <ul className="space-y-2">
+                <FooterLink href="#">Features</FooterLink>
+                <FooterLink href="#">Pricing</FooterLink>
+                <FooterLink href="#">Integrations</FooterLink>
+                <FooterLink href="#">API</FooterLink>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium text-gray-900 mb-3">Company</h4>
+              <ul className="space-y-2">
+                <FooterLink href="#">About</FooterLink>
+                <FooterLink href="#">Blog</FooterLink>
+                <FooterLink href="#">Careers</FooterLink>
+                <FooterLink href="#">Contact</FooterLink>
+              </ul>
+            </div>
           </div>
 
-          <form className="flex flex-col space-y-2 max-w-sm">
-            <label htmlFor="email" className="text-sm font-medium">
-              Subscribe to our newsletter
-            </label>
-            <div className="flex">
+          {/* Newsletter */}
+          <div className="space-y-4">
+            <h4 className="font-medium text-gray-900">Stay Updated</h4>
+            <p className="text-sm text-gray-600">
+              Get the latest updates and product news.
+            </p>
+            <div className="space-y-3">
               <input
                 type="email"
-                id="email"
-                placeholder="Email"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none"
+                placeholder="Enter your email"
+                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
               />
-              <button className="bg-black text-white px-4 py-2 rounded-r-md hover:bg-gray-800 transition">
+              <button className="w-full bg-black text-white py-2 px-4 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors">
                 Subscribe
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-6 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
             <p className="text-sm text-gray-500">
-              By submitting, you agree to our{" "}
-              <a href="#" className="underline">
-                Privacy Policy
-              </a>
+              © 2025 Zolaz. All rights reserved.
             </p>
-          </form>
+            <div className="flex space-x-6 text-sm">
+              <FooterLink href="#">Privacy Policy</FooterLink>
+              <FooterLink href="#">Terms of Service</FooterLink>
+              <FooterLink href="#">Cookie Policy</FooterLink>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4 className="font-semibold mb-4">Product</h4>
-          <ul className="space-y-2 text-gray-700 ">
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-semibold mb-4">Company</h4>
-          <ul className="space-y-2 text-gray-600">
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Contact</li>
-            <li>Privacy</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-semibold mb-4">Resources</h4>
-          <ul className="space-y-2 text-gray-600">
-            <li>Help</li>
-            <li>Sales</li>
-            <li>Advertise</li>
-          </ul>
-        </div>
-        </div>
+      </div>
     </footer>
   );
 }
 
-function IconCircle({ icon }) {
+function SocialIcon({ icon }) {
   return (
-    <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 text-lg hover:bg-gray-200 transition">
+    <div className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:text-black hover:border-gray-300 transition-all cursor-pointer">
       {icon}
     </div>
+  );
+}
+
+function FooterLink({ href, children }) {
+  return (
+    <li>
+      <a 
+        href={href} 
+        className="text-sm text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
+      >
+        {children}
+      </a>
+    </li>
   );
 }
