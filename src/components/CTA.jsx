@@ -5,11 +5,11 @@ export default function CTA() {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center "
                 style={{
-                    backgroundImage: "url('/Cta.jpg')",
+                    backgroundImage: "url('/Cta3.jpg')",
                 }}
             />
 
-            <div className="absolute inset-0 z-10 bg-black/40 bg-opacity-60" />
+            <div className="absolute inset-0 z-10 bg-black/25 bg-opacity-30" />
 
             <div className="relative z-20 max-w-5xl mx-auto text-center text-white">
                 <h2 className="text-4xl md:text-5xl  font-bold leading-tight">

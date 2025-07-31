@@ -54,7 +54,7 @@ const Why_us = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Premium Caribbean Experiences
           </h2>
-          <p className="text-gray-600 max-w-xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Expert planning, hidden destinations, and personalized luxury services tailored to you.
           </p>
         </div>
