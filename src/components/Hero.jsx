@@ -31,7 +31,8 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-emerald-600  text-lg md:text-xl"
         >
-          Experience Unmatched Delight With Us.
+          Discover True Delight.
+
         </motion.span>
 
         <motion.h1

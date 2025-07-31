@@ -24,7 +24,7 @@ const destinations = [
   },
   {
     title: 'New York',
-    tours: 25,
+    tours: 25 ,
     rating: 4.9,
     price: 399,
     image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80',
@@ -113,7 +113,7 @@ const Destinations = () => {
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1 text-gray-500">
                       <Calendar className="w-4 h-4" />
-                      <span className="text-sm">{destination.tours} Tours</span>
+                      <span className="text-sm">{destination.tours}+ Tours</span>
                     </div>
                     <div className="flex items-center gap-1 text-gray-500">
                       <Users className="w-4 h-4" />
