@@ -5,7 +5,7 @@ export default function CTA() {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center "
                 style={{
-                    backgroundImage: "url('/Cta3.jpg')",
+                    backgroundImage: "url('/Cta.jpg')",
                 }}
             />
 

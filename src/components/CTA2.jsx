@@ -8,7 +8,7 @@ import {
 
 export default function CTA2() {
   return (
-    <section className="md:py-10">
+    <section className="md:pt-10 pb-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="max-w-4xl mx-auto px-4 space-y-6">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 ">
